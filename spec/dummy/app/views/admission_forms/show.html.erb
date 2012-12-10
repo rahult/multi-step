@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>First name:</b>
+  <%= @admission_form.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @admission_form.last_name %>
+</p>
+
+<p>
+  <b>Date of birth:</b>
+  <%= @admission_form.date_of_birth %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @admission_form.email %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @admission_form.phone %>
+</p>
+
+<p>
+  <b>Date of admission:</b>
+  <%= @admission_form.date_of_admission %>
+</p>
+
+<p>
+  <b>Reason:</b>
+  <%= @admission_form.reason %>
+</p>
+
+<p>
+  <b>Step:</b>
+  <%= @admission_form.step %>
+</p>
+
+
+<%= link_to 'Edit', edit_admission_form_path(@admission_form) %> |
+<%= link_to 'Back', admission_forms_path %>

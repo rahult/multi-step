@@ -1,4 +1,7 @@
 Dummy::Application.routes.draw do
+  resources :admission_forms
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

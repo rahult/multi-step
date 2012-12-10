@@ -1,0 +1,49 @@
+<%= form_for(@admission_form) do |f| %>
+  <% if @admission_form.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@admission_form.errors.count, "error") %> prohibited this admission_form from being saved:</h2>
+
+      <ul>
+      <% @admission_form.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :date_of_birth %><br />
+    <%= f.date_select :date_of_birth %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :date_of_admission %><br />
+    <%= f.date_select :date_of_admission %>
+  </div>
+  <div class="field">
+    <%= f.label :reason %><br />
+    <%= f.text_area :reason %>
+  </div>
+  <div class="field">
+    <%= f.label :step %><br />
+    <%= f.text_field :step %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
