@@ -35,6 +35,9 @@ Spork.prefork do
     # the seed, which is printed after each run.
     #     --seed 1234
     config.order = "random"
+
+    # FactoryGirl methods to make it less verbose
+    config.include FactoryGirl::Syntax::Methods
   end
 
 end
