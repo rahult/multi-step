@@ -22,4 +22,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency "guard-rspec"
   s.add_development_dependency "guard-spork"
   s.add_development_dependency "rb-fsevent"
+  s.add_development_dependency "factory_girl_rails"
+  s.add_development_dependency "growl"
 end
