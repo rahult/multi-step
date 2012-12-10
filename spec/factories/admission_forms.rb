@@ -2,13 +2,13 @@
 
 FactoryGirl.define do
   factory :admission_form do
-    first_name "MyString"
-    last_name "MyString"
+    first_name "John"
+    last_name "Doe"
     date_of_birth "2012-12-10"
-    email "MyString"
-    phone "MyString"
+    email "john@example.com"
+    phone "(111) 111111"
     date_of_admission "2012-12-10"
-    reason "MyText"
-    step "MyString"
+    reason "Reason of admission goes here"
+    step nil
   end
 end
